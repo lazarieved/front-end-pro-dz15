@@ -2,7 +2,7 @@ function getNumberOfEven(n){
     n = '' + n;
     var sum = 0;
     for (var j = 0; j < n.length; j++) {
-        if (n.charAt(j) % 2 === 0) {
+        if (n[j] % 2 === 0) {
             sum++;
         }
     }
