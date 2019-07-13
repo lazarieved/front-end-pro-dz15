@@ -1,12 +1,12 @@
 function getNumberOfEven(n){
-    n = '' + n;
+    n = String(n);
     var sum = 0;
     for (var j = 0; j < n.length; j++) {
-        if (n[j] % 2 === 0) {
+        if (!(n[j] % 2)) {
             sum++;
         }
     }
-    alert('Кол-во четных цыфр: ' + sum); 
+    return sum; 
 }
 
 getNumberOfEven(223344) // 4
